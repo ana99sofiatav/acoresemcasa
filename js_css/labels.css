@@ -603,62 +603,6 @@ path.ribeira_grande{ fill: rgba(153, 51, 255,0.6);}
 path.povoacao{ fill: rgba(255, 26, 117,0.6);}
 
 
-path.ponta_delgada:hover {
-    cursor: pointer;
-  fill: #0099ff;
-  stroke-dashoffset: 100;
-  stroke-dasharray: 700;
-  stroke-width: 3;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 755;
-}
-path.lagoa:hover {
-  cursor: pointer;
-  fill: #ffcc00;
-  stroke-dashoffset: 100;
-  stroke-dasharray: 700;
-  stroke-width: 3;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 755;
-}
-path.vila_franca_campo:hover {
-  fill: #70db70;
-  cursor: pointer;
-  stroke-dashoffset: 100;
-  stroke-dasharray: 700;
-  stroke-width: 3;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 755;
-}
-path.nordeste:hover {
-  fill: #ff3333;
-  cursor: pointer;
-  stroke-dashoffset: 100;
-  stroke-dasharray: 700;
-  stroke-width: 3;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 755;
-}
-path.ribeira_grande:hover {
-  fill: #9933ff;
-  cursor: pointer;
-  stroke-dashoffset: 100;
-  stroke-dasharray: 700;
-  stroke-width: 3;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 755;
-}
-path.povoacao:hover {
-  fill:#ff1a75;
-  cursor: pointer;
-  stroke-dashoffset: 100;
-  stroke-dasharray: 700;
-  stroke-width: 3;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 755;
-}
-
-
 path {
    
   stroke-dasharray: 700;
