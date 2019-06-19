@@ -6,7 +6,7 @@
 
 <head>
 
-    <title>Açores em Casa</title>
+    <title>Açores em Casa 2</title>
 
     <link rel="icon" href="js_css/images/iconesite.ico" type="image/x-icon" />
 
