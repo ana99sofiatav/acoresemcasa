@@ -3,151 +3,16 @@
   <head>
     <title>Ilhas</title>
     <link rel="icon" href ="js_css/images/iconesite.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="js_css/images/iconesite.ico" type="image/x-icon" />
   	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-	  
     <link href="js_css/labels.css" rel="stylesheet" type="text/css">
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="js_css/galeria.js"></script>
   </head>
 
   <body onload="initialize()">
-  
-  
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7KLPJVT0E5cijuhas3FpYsDj2C4qCFs0&callback=initMap"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW4Q0l8mp-DmB6ZjogRlOUxifrrPcJsdY&callback=initMap"
     ></script>
-  <script>
-    
-    function initialize() {
-        
-        //variáveis dos mapas
-        var sao_miguel = new google.maps.LatLng(37.782545, -25.495070);
-        var santa_maria = new google.maps.LatLng(36.973062, -25.094728);
-        var sao_jorge = new google.maps.LatLng(38.641253, -28.029045);
-        var graciosa = new google.maps.LatLng(39.051702, -28.006863);
-        var terceira = new google.maps.LatLng(38.722418, -27.213828);
-        var flores = new google.maps.LatLng(39.439280, -31.204284);
-        var faial = new google.maps.LatLng(38.577781, -28.700612);
-        var corvo = new google.maps.LatLng(39.700333, -31.114375);
-        var pico_coordenates = new google.maps.LatLng(38.459796, -28.322870);
-        
-        
-        var mapa1 = {
-            zoom: 10,                                      //Zoom do mapa
-            center: sao_miguel,                           //nome do mapa original
-            mapTypeId: google.maps.MapTypeId.SATELLITE   //tipo de mapa ROADMAP ou SATTELITE
-        };
-        var mapa2 =  {
-            zoom: 12,
-            center: santa_maria,
-            mapTypeId: google.maps.MapTypeId.SATELLITE
-        };
-        var mapa3 =  {
-            zoom: 11,
-            center: sao_jorge,
-            mapTypeId: google.maps.MapTypeId.SATELLITE
-        };
-        var mapa4 =  {
-            zoom: 12,
-            center: graciosa,
-            mapTypeId: google.maps.MapTypeId.SATELLITE
-        };
-        var mapa5 =  {
-            zoom: 11,
-            center: terceira,
-            mapTypeId: google.maps.MapTypeId.SATELLITE
-        };
-        var mapa6 =  {
-            zoom: 11,
-            center: flores,
-            mapTypeId: google.maps.MapTypeId.SATELLITE
-        };
-        var mapa7 =  {
-            zoom: 11,
-            center: faial,
-            mapTypeId: google.maps.MapTypeId.SATELLITE
-        };
-        var mapa8 =  {
-            zoom: 12,
-            center: corvo,
-            mapTypeId: google.maps.MapTypeId.SATELLITE
-        };
-        var mapa9 =  {
-            zoom: 10.5,
-            center: pico_coordenates,
-            mapTypeId: google.maps.MapTypeId.SATELLITE
-        };
-    
-        var saomiguel = new google.maps.Map(document.getElementById("mapa_sao_miguel"), mapa1);
-        var santamaria = new google.maps.Map(document.getElementById("mapa_santa_maria"), mapa2);
-        var saojorge = new google.maps.Map(document.getElementById("mapa_sao_jorge"), mapa3);
-        var graciosa = new google.maps.Map(document.getElementById("mapa_graciosa"), mapa4);
-        var terceira = new google.maps.Map(document.getElementById("mapa_terceira"), mapa5);
-        var flores = new google.maps.Map(document.getElementById("mapa_flores"), mapa6);
-        var faial = new google.maps.Map(document.getElementById("mapa_faial"), mapa7);
-        var corvo = new google.maps.Map(document.getElementById("mapa_corvo"), mapa8);
-        var pico = new google.maps.Map(document.getElementById("mapa_pico"), mapa9);
-    
-        var myMarker = new google.maps.Marker(
-        {
-            position: sao_miguel,
-            map: saomiguel,
-            title:"São Miguel"
-       });
-        var myMarker2 = new google.maps.Marker(
-            {
-                position: santa_maria,
-                map: santamaria,
-                title:"Santa Maria"
-        });
-        var myMarker3 = new google.maps.Marker(
-            {
-                position: sao_jorge,
-                map: saojorge,
-                title:"São Jorge"
-        });
-        var myMarker4 = new google.maps.Marker(
-            {
-                position: graciosa,
-                map: graciosa,
-                title:"Graciosa"
-        });
-        var myMarker5 = new google.maps.Marker(
-            {
-                position: terceira,
-                map: terceira,
-                title:"Terceira"
-        });
-        var myMarker6 = new google.maps.Marker(
-            {
-                position: flores,
-                map: flores,
-                title:"Flores"
-        });
-        var myMarker7 = new google.maps.Marker(
-            {
-                position: faial,
-                map: faial,
-                title:"Faial"
-        });
-        var myMarker8 = new google.maps.Marker(
-            {
-                position: corvo,
-                map: corvo,
-                title:"Corvo"
-        });
-        var myMarker9 = new google.maps.Marker(
-            {
-                position: pico_coordenates,
-                map: pico,
-                title:"Pico"
-        });
-    }
-     
-        google.maps.event.addDomListener(window, 'load', initialize);
-
-
-    </script>
     
     
    <div class="divmenu">
@@ -174,6 +39,7 @@
     </ul>
    </div>
    
+          <button class="button" onclick="goBack()"><i class="material-icons">chevron_left</i></button>
    <div id="corpo">
    
 <div>

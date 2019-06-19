@@ -6,6 +6,8 @@
     <link rel="icon" href ="js_css/images/iconesite.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="js_css/images/iconesite.ico" type="image/x-icon" />
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="js_css/galeria.js"></script>
     
     <link href="js_css/style.css" rel="stylesheet" type="text/css"/>
   </head>
@@ -37,6 +39,8 @@
    </div>
    
    <div id="corpo">
+          <button class="button" onclick="goBack()"><i class="material-icons">chevron_left</i></button>
+          
         <h1 id="ilhash1">História de São Miguel</h1>
 
         <div id="intro">

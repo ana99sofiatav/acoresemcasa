@@ -9,6 +9,8 @@
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
         <link href="../js_css/labels.css" rel="stylesheet" type="text/css"/>
         <script src="comentarios_lagoa/jquery-3.2.1.min.js"></script>
+        <script scr="../js_css/galeria.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
         <div class="divmenu">
@@ -39,7 +41,8 @@
         </div>
         <!--Meter fotos da região própria-->
         <div id="corpo">
-            <h1>Lagoa</h1>
+            
+          <button class="button" onclick="goBack()"><i class="material-icons">chevron_left</i></button><h1>Lagoa</h1>
             <img align="right" src="../js_css/images/azores_images/concelhos/lagoa_flag.png" alt="Bandeira de Lagoa"/>
             <main>
                 <input id="tab1" type="radio" name="tabs" checked>
@@ -107,14 +110,38 @@
         
         <section id="content2">
             <div id="intro">
-                <p></p>
-                <dd><h1>Igrejas em Lagoa</h1></dd>
-                    <p>Cabouco</p>
-                    <p>Água de Pau</p>
-                    <p>Nossa Senhora do Rosário(Lagoa)</p>
-                    <p>Ribeira Chã</p>
-                    <p>Santa Cruz (Lagoa)</p>
-            <p></p>
+                <h1>Museu Etnográfico do Cabouco</h1>
+                
+                <div id="conteudo">
+                    <div id="um">Em 1990, a junta de freguesia do Cabouco adquiriu o Museu Etnográfico do Cabouco, instalando-o na própria sede da mesma, a qual foi alvo de obras de recuperação e adaptação. O museu abriu ao público a 14 de setembro de 1997. Com o alargamento do piso inferior do edifício da instituição, foi possível instalar este museu local, preenchendo-o com coleções de natureza etnográfica, sendo que o intuito principal era o de se proceder à preservação de vivências e memórias da terra e das gentes cabouquenses.
+                    </div>
+                    <div id="dois">
+                        <img src="freguesias/imgens/lagoa/museu_cabouco.png" alt="Lagoa das Sete Cidades" id="imagenshistoria"><figcaptation>Núcleo Museológico do Cabouco</figcaptation>
+                    </div>
+                </div>
+                
+                <div id="conteudo">
+                <div id="um"><img src="freguesias/imgens/lagoa/museu_cabouco_2.png" alt="Lagoa das Sete Cidades" id="imagenshistoria"><figcaptation>Núcleo Museológico do Cabouco</figcaptation>
+                </div>
+                <div id="dois">
+                    
+                 A exposição integra um espólio de valor histórico para o Cabouco, essencialmente constituído por objetos etnográficos e um acervo documental sobre a mesma temática, constituído por 530 peças etnográficas. A peça mais antiga que existe na exposição é datada de há mais de 200 anos e trata-se da prensa que está incluída na secção da adega. Através de uma apresentação cénica e funcional, o espaço encontra-se dividido por onze secções diferentes, representando aspetos do quotidiano rural daquela freguesia.
+                
+                </div>
+                </div>
+                
+                <div id="conteudo">
+                <div id="um">
+                     Neste sentido, a exposição deste museu mostra uma interessante coleção de peças relativas ao trabalho, usos e costumes do povo do Cabouco, organizada pelos seguintes temas: o trabalho do cabouqueiro, os acontecimentos que conduziram à obtenção dos símbolos heráldicos da freguesia, aspetos da cozinha regional, artefatos de oficinas de sapataria e carpintaria, artefatos do recheio de uma barbearia tradicional, representação da matança do porco, o trabalho do lenhador, aspetos da adega (lagar), o trabalho da lavoura, que integra diversas alfaias agrícolas, e documentação informativa reunida sobre todas as temáticas acima referidas, que remonta a 1955.
+                     
+                </div>
+                <div id="dois"><img src="freguesias/imgens/lagoa/museu_cabouco_3.png" alt="Lagoa das Sete Cidades" id="imagenshistoria"><figcaptation>Núcleo Museológico do Cabouco</figcaptation>
+                </div>
+                </div>
+                
+            
+            
+            
             </div>
         </section>
         
@@ -139,7 +166,81 @@
         </div>
         </section>
         <section id="content4">
+           
+              <h1 >Galeria</h1>
             
+                <div class="row">
+                  <div class="column">
+                    <img src="freguesias/imgens/ponta_delgada/ponta_delgada/lagoa.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="freguesias/imgens/ponta_delgada/ponta_delgada/borges.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="freguesias/imgens/ponta_delgada/ponta_delgada/carlos_machado.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="freguesias/imgens/ponta_delgada/ponta_delgada/igreja_matriz.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="freguesias/imgens/ponta_delgada/ponta_delgada/igreja_matriz_2.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                  </div>
+                </div>
+                
+                <div id="myModal" class="modal">
+                  <span class="close cursor" onclick="closeModal()">&times;</span>
+                  <div class="modal-content">
+                
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 5</div>
+                      <img src="freguesias/imgens/ponta_delgada/ponta_delgada/lagoa.png" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 5</div>
+                      <img src="freguesias/imgens/ponta_delgada/ponta_delgada/borges.png" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 5</div>
+                      <img src="freguesias/imgens/ponta_delgada/ponta_delgada/carlos_machado.png" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 5</div>
+                      <img src="freguesias/imgens/ponta_delgada/ponta_delgada/igreja_matriz.png" style="width:100%">
+                    </div>
+                    
+                    <div class="mySlides">
+                      <div class="numbertext">5 / 5</div>
+                      <img src="freguesias/imgens/ponta_delgada/ponta_delgada/igreja_matriz_2.png" style="width:100%">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                    <div class="caption-container">
+                      <p id="caption"></p>
+                    </div>
+                
+                
+                    <div class="column">
+                      <img class="demo cursor" src="freguesias/imgens/ponta_delgada/ponta_delgada/lagoa.png" style="width:100%" onclick="currentSlide(1)" alt="Lagoa Sete Cidades">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="freguesias/imgens/ponta_delgada/ponta_delgada/borges.png" style="width:100%" onclick="currentSlide(2)" alt="Jaardim António Borges">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="freguesias/imgens/ponta_delgada/ponta_delgada/carlos_machado.png" style="width:100%" onclick="currentSlide(3)" alt="Museu Carlos Machado">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="freguesias/imgens/ponta_delgada/ponta_delgada/igreja_matriz.png" style="width:100%" onclick="currentSlide(4)" alt="Igreja Matriz">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="freguesias/imgens/ponta_delgada/ponta_delgada/igreja_matriz_2.png" style="width:100%" onclick="currentSlide(5)" alt="Igreja Matriz">
+                    </div>
+                  </div>
+                </div>
         </section>
         </main>
                     <h1>Freguesias</h1>
@@ -255,18 +356,29 @@
                     var name = $('#name').val();
                     var message = $('#message').val();
                     
-                    if(name == "" && message == ""){
-                    		$('#name-info').addClass("error");
-                    		$(".error").text(alert("Oops! 🙁 Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
-                    }
-                    if(name == "" && message !== ""){
-                    		$('#name-info').addClass("error");
-                    		$(".error").text(alert("Oops! 🙁 A culpa não é sua, é nossa. A página irá recarregar.",window.location.reload()));
-                    }
-                    if(message == ""){
-                    		$('#message-info').addClass("error");
-                    		$(".error").text(("Oops! 🙁 Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
-                    }
+                                if(name == "" && message == ""){
+
+            		$('#name-info').addClass("error");
+
+            		$(".error").text(alert("Oops! Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
+
+            }
+
+            if(name == "" && message !== ""){
+
+            		$('#name-info').addClass("error");
+
+            		$(".error").text(alert("Oops! Algo ocorreu, possíveis causas: \n ->Ainda não fez login, \n ->Ainda não tem conta, \n ->Problema de conexão, \nA página irá recarregar.",window.location.reload()));
+
+            }
+
+            if(message == ""){
+
+            		$('#message-info').addClass("error");
+
+            		$(".error").text(alert("Oops! 🙁 Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
+
+            }
                     
                     if(name && message){
                         	$("#loader").show();

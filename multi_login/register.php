@@ -53,6 +53,10 @@
     		<input type="text" name="username" value=<?php echo $username; ?>"">
     	</div>
     	<div class="input-group">
+    		<label><a>Nome Completo</a></label>
+    		<input type="text" name="nome_completo" value=<?php echo $nome; ?>"">
+    	</div>
+    	<div class="input-group">
     		<label><a>Email</a></label>
     		<input type="email" name="email" value="<?php echo $email; ?>">
     	</div>
@@ -68,7 +72,7 @@
     		<button type="submit" class="btn" name="register_btn">Criar Conta</button>
     	</div>
     	<p>
-    		Já é nosso membro? <a href="login.php">Faça Login</a>
+    		Já é nosso membro? <a style="font-color:red;" href="login.php">Faça Login</a>
     	</p>
     </form>
     

@@ -2,10 +2,12 @@
 session_start();
 
 // connect to database
-$db = mysqli_connect('localhost', 'id8102513_utilizadores', '12345', 'id8102513_login');
+$db = mysqli_connect('localhost', 'u457418773_mesu', 'gunutapyBe', 'u457418773_mesu');
 
 // variable declaration
+$id = "";
 $username = "";
+$nome = "";
 $email    = "";
 $errors   = array(); 
 
@@ -22,22 +24,26 @@ function register(){
 	// receive all input values from the form. Call the e() function
     // defined below to escape form values
 	$username    =  e($_POST['username']);
+	$nome    =  e($_POST['nome_completo']);
 	$email       =  e($_POST['email']);
 	$password_1  =  e($_POST['password_1']);
 	$password_2  =  e($_POST['password_2']);
 
 	// form validation: ensure that the form is correctly filled
 	if (empty($username)) { 
-		array_push($errors, "Username is required"); 
+		array_push($errors, "Nome de Utilizador é necessário"); 
+	}
+	if (empty($nome)) { 
+		array_push($errors, "Nome Completo é necessário"); 
 	}
 	if (empty($email)) { 
-		array_push($errors, "Email is required"); 
+		array_push($errors, "Email é necessário"); 
 	}
 	if (empty($password_1)) { 
-		array_push($errors, "Password is required"); 
+		array_push($errors, "Password é necessária"); 
 	}
 	if ($password_1 != $password_2) {
-		array_push($errors, "The two passwords do not match");
+		array_push($errors, "As duas passwords não condizem");
 	}
 
 	// register user if there are no errors in the form
@@ -46,22 +52,76 @@ function register(){
 
 		if (isset($_POST['user_type'])) {
 			$user_type = e($_POST['user_type']);
-			$query = "INSERT INTO users (username, email, user_type, password) 
-					  VALUES('$username', '$email', '$user_type', '$password')";
+			$query = "INSERT INTO users (username, nome_completo, email, user_type, password) 
+					  VALUES('$username', '$nome', '$email', '$user_type', '$password')";
 			mysqli_query($db, $query);
-			$_SESSION['success']  = "New user successfully created!!";
+			$_SESSION['success']  = "Novo utilizador criado!!";
 			header('location: home.php');
 		}else{
-			$query = "INSERT INTO users (username, email, user_type, password) 
-					  VALUES('$username', '$email', 'user', '$password')";
+			$query = "INSERT INTO users (username, nome_completo, email, user_type, password) 
+					  VALUES('$username', '$nome', '$email', 'user', '$password')";
 			mysqli_query($db, $query);
 
 			// get id of the created user
 			$logged_in_user_id = mysqli_insert_id($db);
 
 			$_SESSION['user'] = getUserById($logged_in_user_id); // put logged in user in session
-			$_SESSION['success']  = "You are now logged in";
+			$_SESSION['success']  = "Entrou com sucesso!";
 			header('location: index.php');				
+		}
+	}
+}
+
+// call the register() function if btn is clicked
+if (isset($_POST['editar'])) {
+	editar();
+}
+// Editar USER
+function editar(){
+	// call these variables with the global keyword to make them available in function
+	global $db, $errors, $username, $email;
+
+	// receive all input values from the form. Call the e() function
+    // defined below to escape form values
+	$id  =  e($_POST['id']);
+	$username    =  e($_POST['username']);
+	$nome    =  e($_POST['nome_completo']);
+	$email       =  e($_POST['email']);
+	$password_1  =  e($_POST['password_1']);
+	$password_2  =  e($_POST['password_2']);
+
+	// form validation: ensure that the form is correctly filled
+	if (empty($username)) { 
+		array_push($errors, "Nome de Utilizador é necessário"); 
+	}
+	if (empty($nome)) { 
+		array_push($errors, "Nome Completo é necessário"); 
+	}
+	if (empty($email)) { 
+		array_push($errors, "Email é necessário"); 
+	}
+	if (empty($password_1)) { 
+		array_push($errors, "Password é necessária"); 
+	}
+	if ($password_1 != $password_2) {
+		array_push($errors, "As duas passwords não condizem");
+	}
+
+	// register user if there are no errors in the form
+	if (count($errors) == 0) {
+		$password = md5($password_1);//encrypt the password before saving in the database
+
+		if (isset($_POST['user_type'])) {
+		}else{
+			$query = "UPDATE users SET username = '$username', nome_completo = '$nome', email = '$email', password = '$password' WHERE id = '$id'";
+			mysqli_query($db, $query);
+
+			// get id of the created user
+			$logged_in_user_id = mysqli_insert_id($db);
+
+			$_SESSION['user'] = getUserById($logged_in_user_id); // put logged in user in session
+			$_SESSION['success']  = "Editado com sucesso!";
+			header('location: userpage.php');				
 		}
 	}
 }
@@ -122,10 +182,10 @@ function login(){
 
 	// make sure form is filled properly
 	if (empty($username)) {
-		array_push($errors, "Username is required");
+		array_push($errors, "Nome de utilizador é necessário");
 	}
 	if (empty($password)) {
-		array_push($errors, "Password is required");
+		array_push($errors, "Password é necessária");
 	}
 
 	// attempt login if no errors on form
@@ -141,16 +201,16 @@ function login(){
 			if ($logged_in_user['user_type'] == 'admin') {
 
 				$_SESSION['user'] = $logged_in_user;
-				$_SESSION['success']  = "You are now logged in";
+				$_SESSION['success']  = "Entrou com sucesso";
 				header('location: admin/home.php');		  
 			}else{
 				$_SESSION['user'] = $logged_in_user;
-				$_SESSION['success']  = "You are now logged in";
+				$_SESSION['success']  = "Entrou com sucesso";
 
 				header('location: index.php');
 			}
 		}else {
-			array_push($errors, "Wrong username/password combination");
+			array_push($errors, "Username/password errados");
 		}
 	}
 }

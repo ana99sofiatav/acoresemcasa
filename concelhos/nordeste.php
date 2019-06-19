@@ -14,6 +14,8 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <link href="../js_css/labels.css" rel="stylesheet" type="text/css"/>
     <script src="comentarios_nordeste/jquery-3.2.1.min.js"></script>
+        <script src="../js_css/galeria.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="divmenu">
@@ -42,6 +44,8 @@
     </div>
     <!--Meter fotos da região própria-->
     <div id="corpo">
+        
+          <button class="button" onclick="goBack()"><i class="material-icons">chevron_left</i></button><h1>Nordeste</h1>
         <main>
             <input id="tab1" type="radio" name="tabs" checked>
             <label for="tab1">
@@ -54,10 +58,6 @@
             <input id="tab3" type="radio" name="tabs">
             <label for="tab3">
                 <p>Streetview</p>
-            </label>
-            <input id="tab4" type="radio" name="tabs">
-            <label for="tab4">
-                <p>Galeria</p>
             </label>
             <section id="content1">
                 <h1>Mapa Nordeste</h1>
@@ -110,37 +110,34 @@
                     </svg>
                 </div>
                 <div id="intro">
-                    <p>
+                    <p></p>
                     <h1>Factos</h1>
-                    Nordeste é uma vila e um município português na Ilha de São Miguel, Região Autónoma dos Açores, com 101,51 km² de área e 5.254 habitantes (2004), subdividido em 9 freguesias. O município é limitado a sul pelo município da Povoação e a oeste pela Ribeira Grande e tem costa no oceano Atlântico a norte e leste.</p>
-                    <p>
-                    <h1>Pontos turísticos</h1>
-                    No Nordeste existem muitos pontos turísticos como a Miradouro da Ponta do Sossego, Miradouro da Ponta da Madrugada, Serra da Tronqueira, Farol do Arnel, Parque Natural dos Caldeirões, entre outros miradouros que permitem avistar paisagens panorâmicas para o mar. O Nordeste é muito conhecido pela sua vegetação e pelas lindas flores como as hortências ou as azaléias que enfeitam as estradas do concelho.</p>
-                    <p>
-                    <h1>Natureza</h1>
-                    Aqui se localiza o Pico da Vara, ponto mais alto da ilha de São Miguel, com cerca de 1.100 metros de altitude. O seu relevo é de carácter montanhoso, recortado por ribeiras que deslizam por entre a vegetação. Com uma extensão aproximada de 1982 hectares, incorpora uma grande quantidade de vegetação endémica, assim como todo um conjunto de flora rara e de grande valor. O Priolo, ave endémica da ilha, encontra aqui o seu habitat.
-                    Neste miradouro natural, daqui se consegue ter uma impressionante panorâmica sobre grande parte da ilha, com destaque para o Planalto dos Graminhais, o Pico Verde e a serra da Tronqueira, a sul, e as encostas da caldeira das Furnas e as serras de Água do Pau e Devassa, a oeste.</p>
-                    </p>
+                    Nordeste é uma vila e um município português na Ilha de São Miguel, Região Autónoma dos Açores, com 101,51 km² de área e 5.254 habitantes (2004), subdividido em 9 freguesias. O município é limitado a sul pelo município da Povoação e a oeste pela Ribeira Grande e tem costa no oceano Atlântico a norte e leste.
+                   
+                    </div>
                     <br>
-                </div>
             </section>
             <section id="content2">
-                <p>
-                    Pôr conteúdo!!
-                </p>
-                <p>
-                    Pôr conteúdo!!
-                </p>
+                <h1>Pontos turísticos</h1>
+                <div id="intro">
+                    No Nordeste existem muitos pontos turísticos como a Miradouro da Ponta do Sossego, Miradouro da Ponta da Madrugada, Serra da Tronqueira, Farol do Arnel, Parque Natural dos Caldeirões, entre outros miradouros que permitem avistar paisagens panorâmicas para o mar. O Nordeste é muito conhecido pela sua vegetação e pelas lindas flores como as hortências ou as azaléias que enfeitam as estradas do concelho.
+                    <p></p>
+                    <h1>Natureza</h1>
+                    Aqui se localiza o Pico da Vara, ponto mais alto da ilha de São Miguel, com cerca de 1.100 metros de altitude. O seu relevo é de carácter montanhoso, recortado por ribeiras que deslizam por entre a vegetação. Com uma extensão aproximada de 1982 hectares, incorpora uma grande quantidade de vegetação endémica, assim como todo um conjunto de flora rara e de grande valor. O Priolo, ave endémica da ilha, encontra aqui o seu habitat.
+                    Neste miradouro natural, daqui se consegue ter uma impressionante panorâmica sobre grande parte da ilha, com destaque para o Planalto dos Graminhais, o Pico Verde e a serra da Tronqueira, a sul, e as encostas da caldeira das Furnas e as serras de Água do Pau e Devassa, a oeste.
+                    </div>
             </section>
             <section id="content3">
                 <h1>Farol do Arnel</h1>
                 <iframe src="https://www.google.com/maps/embed?pb=!4v1549848543584!6m8!1m7!1sCAoSLEFGMVFpcE1oSlpRUmRzN19FY21iY2Jlc25DeE1pbnhVT0U2blNCXzhXTTZO!2m2!1d37.824131!2d-25.135868!3f131.70731699732798!4f-9.68218509747723!5f0.7820865974627469" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
                 <div id="intro">
-                    <p>Visite o Farol do Arnel o que porporcionará uma vista única.</p>
+                    Visite o Farol do Arnel o que porporcionará uma vista única.
+                    Situado na zona oriental da Ilha de S. Miguel, o farol do Arnel foi o primeiro a ser instalado no arquipélago dos Açores, tendo começado a funcionar em 26 de novembro de 1876. De acordo com a documentação existente, o equipamento completo do farol custou cerca de 21 mil reis.
+<p></p>
+A sua caraterística torre octogonal, foi construída sobre o edifício da mesma forma destinado a alojamento dos faroleiros.
                 </div>
                 <br>
                 <div align="center">
-                    <p>Farol do Arnel</p>
                     <br>
                     <br>
                 </div>
@@ -185,6 +182,7 @@
             <a class="linkgeneral" href="freguesias/nordeste/sao_pedro.php">São Pedro</a>
         </dd>
     </div>
+    <div id="intro">
     <div class="demo-container">
         <form action=" " id="frmComment" method="post">
             <div class="row">
@@ -238,7 +236,7 @@
                 }
                 }
                 ?>
-        </div>
+        </div></div>
     </div>
     </div>
     </div>
@@ -248,7 +246,7 @@
         
         
         
-           if(confirm("Are you sure you want to delete this comment?")) {
+           if(confirm("Tem a certeza que quer eliminar este comentário?")) {
         
                 $.ajax({
                 url: "comentarios_nordeste/comment-delete.php",
@@ -279,18 +277,29 @@
                 var name = $('#name').val();
                 var message = $('#message').val();
                 
-                if(name == "" && message == ""){
-                		$('#name-info').addClass("error");
-                		$(".error").text(alert("Oops! 🙁 Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
-                }
-                if(name == "" && message !== ""){
-                		$('#name-info').addClass("error");
-                		$(".error").text(alert("Oops! 🙁 Algo ocorreu, possíveis causas: \n      \t->Ainda não fez login,\n   \t->Ainda não tem conta,\n   \t->Problema de conexão,\nA página irá recarregar.",window.location.reload()));
-                }
-                if(message == ""){
-                		$('#message-info').addClass("error");
-                		$(".error").text(alert("Oops! 🙁 Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
-                }
+                            if(name == "" && message == ""){
+
+            		$('#name-info').addClass("error");
+
+            		$(".error").text(alert("Oops! Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
+
+            }
+
+            if(name == "" && message !== ""){
+
+            		$('#name-info').addClass("error");
+
+            		$(".error").text(alert("Oops! Algo ocorreu, possíveis causas: \n ->Ainda não fez login, \n ->Ainda não tem conta, \n ->Problema de conexão, \nA página irá recarregar.",window.location.reload()));
+
+            }
+
+            if(message == ""){
+
+            		$('#message-info').addClass("error");
+
+            		$(".error").text(alert("Oops! 🙁 Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
+
+            }
                 
                 if(name && message){
                     	$("#loader").show();

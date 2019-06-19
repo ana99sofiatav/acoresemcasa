@@ -6,6 +6,8 @@
       <link rel="shortcut icon" href="js_css/images/iconesite.ico" type="image/x-icon" />
       <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
       <link href="js_css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="js_css/galeria.js"></script>
    </head>
    <body>
       <div class="divmenu">
@@ -31,7 +33,9 @@
             <li class="menuli"><a id="letramenu" href='multi_login/login.php'>Log In</a></li>
          </ul>
       </div>
-      <h1 id="ilhash1">Concelhos de São Miguel</h1>
+      <h1 id="ilhash1">
+          <button class="button" onclick="goBack()"><i class="material-icons">chevron_left</i></button>
+          Concelhos de São Miguel</h1>
       <div id="captioned-gallery">
          <figure class="slider">
             <figure>

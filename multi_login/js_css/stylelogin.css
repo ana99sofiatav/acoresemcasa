@@ -303,45 +303,26 @@ li.dropdown {
 
 
 footer {
-  position: absolute;
   background-color: #333333;
   width: 100%;
+  padding:10px;
+  margin-top:250px;
 }
 
-
-
-  #h4 {
-                        font-family: 'Comfortaa', cursive, Arial;
-			font-size: 2vh;
-			color: white;
-                        font-weight:normal;
-                        line-height:1.5;
-  }
-@media screen and (min-width: 300px) and (max-width: 500px) {
-  #h4 {
-                        font-family: 'Comfortaa', cursive, Arial;
-			font-size: 17px;
-			color: white;
-                        font-weight:normal;
-                        line-height:2;
-  }
-}
-
-* { margin: 0px; padding: 0px; }
 
 .header {
-	width: 40%;
+	max-width: 300px;
 	margin: 50px auto 0px;
 	color: white;
 	background: lightgreen;
 	text-align: center;
 	border: 1px solid lightgreen;
 	border-bottom: none;
-	border-radius: 10px 10px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
 	padding: 20px;
 }
 form, .content {
-	width: 40%;
+	max-width: 300px;
 	margin: 0px auto;
 	padding: 20px;
 	border: 1px solid lightgreen;
@@ -349,7 +330,7 @@ form, .content {
 	border-radius: 0px 0px 10px 10px;
 }
 .input-group {
-	margin: 10px 0px 10px 0px;
+	margin: 5px 0px 10px 0px;
 }
 .input-group label {
 	display: block;
@@ -361,7 +342,7 @@ form, .content {
 	width: 93%;
 	padding: 5px 10px;
 	font-size: 16px;
-	border-radius: 5px;
+	border-radius: 2px;
 	border: 1px solid gray;
 }
 #user_type {
@@ -374,10 +355,10 @@ form, .content {
 	border: 1px solid gray;
 }
 .btn {
-	padding: 10px;
-	font-size: 15px;
+	padding: 10px 20px 10px 20px;
+	font-size: 19px;
 	color: white;
-	background: lightgreen;
+	background: green;
 	border: none;
 	border-radius: 5px;
     		-o-transition:.5s;
@@ -442,3 +423,50 @@ form, .content {
   text-decoration: underline;
   opacity:1;
 }
+.gallery {
+  border: 1px solid grey;
+}
+
+.gallery:hover {
+  opacity: 0.8;
+}
+
+.gallery img {
+  width: 100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.desc {
+  padding: 5%;
+  text-align: center;
+}
+
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 50% ;
+    padding: 3%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100% ;
+    padding:0;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+

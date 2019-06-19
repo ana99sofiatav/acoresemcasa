@@ -15,6 +15,8 @@
       <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
       <link href="../js_css/labels.css" rel="stylesheet" type="text/css"/>
       <script src="comentarios_ribeira_grande/jquery-3.2.1.min.js"></script>
+        <script src="../js_css/galeria.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    </head>
    <body>
       <div class="divmenu">
@@ -43,7 +45,9 @@
       </div>
       <!--Meter fotos da região própria-->
       <div id="corpo">
-         <img align="right" src="../js_css/images/azores_images/concelhos/ribeira_grande_flag.png" alt="Bandeira de Lagoa"/>
+         
+          <button class="button" onclick="goBack()"><i class="material-icons">chevron_left</i></button>
+          <h1>Ribeira Grande</h1><img align="right" src="../js_css/images/azores_images/concelhos/ribeira_grande_flag.png" alt="Bandeira de Lagoa"/>
          <main>
             <input id="tab1" type="radio" name="tabs" checked>
             <label for="tab1">
@@ -317,7 +321,7 @@
          
          
          
-            if(confirm("Are you sure you want to delete this comment?")) {
+            if(confirm("Tem a certeza que quer eliminar este comentário?")) {
          
                  $.ajax({
                  url: "comentarios_ribeira_grande/comment-delete.php",
@@ -348,18 +352,29 @@
                  var name = $('#name').val();
                  var message = $('#message').val();
                  
-                 if(name == "" && message == ""){
-                 		$('#name-info').addClass("error");
-                 		$(".error").text(("Oops! 🙁 Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
-                 }
-                 if(name == "" && message !== ""){
-                 		$('#name-info').addClass("error");
-                 		$(".error").text(alert("
-                 }
-                 if(message == ""){
-                 		$('#message-info').addClass("error");
-                 		$(".error").text(alert("Oops! 🙁 Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
-                 }
+                             if(name == "" && message == ""){
+
+            		$('#name-info').addClass("error");
+
+            		$(".error").text(alert("Oops! Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
+
+            }
+
+            if(name == "" && message !== ""){
+
+            		$('#name-info').addClass("error");
+
+            		$(".error").text(alert("Oops! Algo ocorreu, possíveis causas: \n ->Ainda não fez login, \n ->Ainda não tem conta, \n ->Problema de conexão, \nA página irá recarregar.",window.location.reload()));
+
+            }
+
+            if(message == ""){
+
+            		$('#message-info').addClass("error");
+
+            		$(".error").text(alert("Oops! 🙁 Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
+
+            }
                  
                  if(name && message){
                      	$("#loader").show();

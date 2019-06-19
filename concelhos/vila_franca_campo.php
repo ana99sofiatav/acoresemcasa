@@ -15,6 +15,8 @@
       <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
       <link href="../js_css/labels.css" rel="stylesheet" type="text/css"/>
       <script src="comentarios_vila_franca_do_campo/jquery-3.2.1.min.js"></script>
+        <script src="../js_css/galeria.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <style>
         
       </style>
@@ -46,7 +48,8 @@
       </div>
       <!--Meter fotos da região própria-->
       <div id="corpo">
-         <h1>Vila Franca do Campo</h1>
+         
+          <button class="button" onclick="goBack()"><i class="material-icons">chevron_left</i></button><h1>Vila Franca do Campo</h1>
          <img align="right" src="../js_css/images/azores_images/concelhos/vila_franca_do_campo_flag.png" alt="Bandeira de Lagoa"/>
          <main>
             <input id="tab1" type="radio" name="tabs" checked>
@@ -275,18 +278,29 @@
                  var name = $('#name').val();
                  var message = $('#message').val();
                  
-                 if(name == "" && message == ""){
-                 		$('#name-info').addClass("error");
-                 		$(".error").text(("Oops! 🙁 Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
-                 }
-                 if(name == "" && message !== ""){
-                 		$('#name-info').addClass("error");
-                 		$(".error").text(alert("Oops! 🙁 Algo ocorreu, possíveis causas: \n      \t->Ainda não fez login,\n   \t->Ainda não tem conta,\n   \t->Problema de conexão,\nA página irá recarregar.",window.location.reload()));
-                 }
-                 if(message == ""){
-                 		$('#message-info').addClass("error");
-                 		$(".error").text(alert("Oops! 🙁 Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
-                 }
+                             if(name == "" && message == ""){
+
+            		$('#name-info').addClass("error");
+
+            		$(".error").text(alert("Oops! Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
+
+            }
+
+            if(name == "" && message !== ""){
+
+            		$('#name-info').addClass("error");
+
+            		$(".error").text(alert("Oops! Algo ocorreu, possíveis causas: \n ->Ainda não fez login, \n ->Ainda não tem conta, \n ->Problema de conexão, \nA página irá recarregar.",window.location.reload()));
+
+            }
+
+            if(message == ""){
+
+            		$('#message-info').addClass("error");
+
+            		$(".error").text(alert("Oops! 🙁 Parece que ainda não pode comentar.. \nPara comentar faça login ou, caso esteja com conta iniciada, escreva algo na caixa."));
+
+            }
                  
                  if(name && message){
                      	$("#loader").show();

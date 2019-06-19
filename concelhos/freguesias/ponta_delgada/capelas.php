@@ -314,80 +314,154 @@ O interior com a imagem de Nossa Senhora da Apresentação no altar-mor apresent
             </section>
          </main>
          <h1>Freguesias</h1>
-         <div class="newspaper">
-            <dd>
-               <a class="linkgeneral" href="ajuda_da_bretanha.php">Ajuda da Bretanha</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="arrifes.php">Arrifes</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="candelaria.php">Candelária</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="capelas.php" >Capelas (Ponta Delgada)</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="covoada.php" >Covoada</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/faja_de_baixo.php" >Fajã de Baixo</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/faja_de_cima.php" >Fajã de Cima</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/fenais_da_luz.php" >Fenais da Luz</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/feteiras.php" >Feteiras</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelfreguesias/ponta_delgada/ginetes.php" >Ginetes</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/livramento.php" >Livramento</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/mosteiros.php" >Mosteiros</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/pilar_da_bretanha.php" >Pilar da Bretanha</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/sao_jose.php" >São José (Ponta Delgada)</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/sao_pedro.php" >São Pedro (Ponta Delgada)</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/sao_sebastiao.php" >São Sebastião (Ponta Delgada)</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/relva.php" >Relva (Ponta Delgada)</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/remedios.php" >Remédios (Ponta Delgada)</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/santa_barbara.php" >Santa Bárbara (Ponta Delgada)</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/santa_clara.php" >Santa Clara (Ponta Delgada)</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/santo_antonio.php" >Santo António (Ponta Delgada)</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/sao_roque.php" >São Roque (Ponta Delgada)</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/sao_vicente_ferreira.php" >São Vicente Ferreira</a>
-            </dd>
-            <dd>
-               <a class="linkgeneral" href="concelhos/sete_cidades.php" >Sete Cidades</a>
-            </dd>
-         </div>
+         
+                    <div class="newspaper">
+
+                    <dd>
+
+                        <a class="linkgeneral" href="ajuda_da_bretanha.php">Ajuda da Bretanha</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="linkgeneral" href="arrifes.php">Arrifes</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="candelaria.php">Candelária</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="capelas.php" >Capelas (Ponta Delgada)</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="linkgeneral" href="covoada.php" >Covoada</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="faja_de_baixo.php" >Fajã de Baixo</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="faja_de_cima.php" >Fajã de Cima</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="fenais_da_luz.php" >Fenais da Luz</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" di="feteiras.php" >Feteiras</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="linkgeneral" href="freguesias/ginetes.php" >Ginetes</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" di="livramento.php" >Livramento</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="linkgeneral" href="mosteiros.php" >Mosteiros</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="pilar_da_bretanha.php" >Pilar da Bretanha</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="sao_jose.php" >São José (Ponta Delgada)</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="/sao_pedro.php" >São Pedro (Ponta Delgada)</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="sao_sebastiao.php" >São Sebastião (Ponta Delgada)</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="relva.php" >Relva (Ponta Delgada)</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="remedios.php" >Remédios (Ponta Delgada)</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="santa_barbara.php" >Santa Bárbara (Ponta Delgada)</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="santa_clara.php" >Santa Clara (Ponta Delgada)</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="santo_antonio.php" >Santo António (Ponta Delgada)</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="linkgeneral" href="sao_roque.php" >São Roque (Ponta Delgada)</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="" id="sao_vicente_ferreira.php" >São Vicente Ferreira</a>
+
+                    </dd>
+
+                    <dd>
+
+                        <a class="linkgeneral" href="sete_cidades.php" >Sete Cidades</a>
+
+                    </dd>
+
+                </div>
       </div>
       <footer>
          <a>
